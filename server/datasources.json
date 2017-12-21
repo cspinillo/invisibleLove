@@ -1,0 +1,12 @@
+{
+  "AdminDB": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "SaAdmin",
+    "password": "SmartAisle",
+    "name": "AdminDB",
+    "user": "admin",
+    "connector": "mongodb"
+  }
+}

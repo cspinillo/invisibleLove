@@ -1,0 +1,64 @@
+{
+  "name": "product",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sku": {
+      "type": "string",
+      "required": true
+    },
+    "craft": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    },
+    "age": {
+      "type": "number",
+      "required": true
+    },
+    "smoke": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "mondo": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "featured": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "shelfposition": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "whiskeys": {
+      "type": "belongsTo",
+      "model": "whiskey",
+      "foreignKey": "whiskeyId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
